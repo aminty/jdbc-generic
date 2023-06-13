@@ -8,18 +8,26 @@ public class User extends BaseEntity<Integer> {
 
     private String lastName;
 
-    private String natCode;
-
     private String username;
 
     private String password;
+
+    private String natCode;
 
     private String phone;
 
 
 
+    public User(String firstName, String lastName, String username, String password, String natCode, String phone) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.natCode = natCode;
+        this.username = username;
+        this.password = password;
+        this.phone = phone;
+    }
 
-    public User(Integer id, String firstName, String lastName, String natCode, String username, String password, String phone) {
+    public User(Integer id, String firstName, String lastName,  String username, String password,String natCode, String phone) {
         super(id);
         this.firstName = firstName;
         this.lastName = lastName;

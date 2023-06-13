@@ -6,6 +6,9 @@ public class BaseEntity <ID>{
 
     protected ID id;
 
+    public BaseEntity() {
+    }
+
     public BaseEntity(ID id) {
         this.id = id;
     }

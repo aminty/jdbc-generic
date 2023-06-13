@@ -17,11 +17,11 @@ public class ApplicationContext {
     private static UserService userService;
 
 
+
     static {
         userRepository=new UserRepositoryImpl();
 
         userService=new UserServiceImpl(userRepository);
-
     }
 
     public static UserService getUserService(){
