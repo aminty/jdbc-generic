@@ -92,19 +92,10 @@ public class UserRepositoryImpl
      */
 
     @Override
-    public String getTableName() {
-        return "user_table";
-    }
-
-    @Override
     public String getColumnsName() {
-        return "(first_name,last_name,username,password,national_code,phone)";
+        return "first_name,last_name,username,password,national_code,phone";
     }
 
-    @Override
-    public String getCountOfQuestionMarkForParams() {
-        return "?,?,?,?,?,?";
-    }
 
     @Override
     public String getUpdateQueryParams() {

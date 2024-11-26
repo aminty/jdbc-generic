@@ -1,7 +1,9 @@
 package model;
 
+import base.annotation.Table;
 import base.model.BaseEntity;
 
+@Table(name = "user_table")
 public class User extends BaseEntity<Integer> {
 
     private String firstName;
